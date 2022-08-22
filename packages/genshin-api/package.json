@@ -1,6 +1,6 @@
 {
   "name": "@mihoyo-kit/genshin-api",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "license": "MIT",
   "description": "Provides some encapsulated utilities function for Genshin Impact.",
   "homepage": "https://github.com/leonismoe/genshin-stats/tree/main/packages/genshin-api",
@@ -54,7 +54,7 @@
   },
   "peerDependencies": {
     "@mihoyo-kit/api": "^0.4.0",
-    "@mihoyo-kit/genshin-data": "^2.6.0",
+    "@mihoyo-kit/genshin-data": "^3.0.0",
     "undici": "^5.8.0"
   },
   "devDependencies": {
@@ -63,8 +63,8 @@
     "@rollup/plugin-node-resolve": "^13.3.0",
     "globby": "^13.1.2",
     "mkdirp": "^1.0.4",
-    "rollup": "^2.78.0",
-    "rollup-plugin-typescript2": "^0.32.1",
+    "rollup": "^2.78.1",
+    "rollup-plugin-typescript2": "^0.33.0",
     "tslib": "^2.4.0",
     "typescript": "^4.7.4"
   },

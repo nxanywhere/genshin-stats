@@ -9,9 +9,10 @@ export default defineConfig([
       { format: 'cjs', file: 'dist/index.js' },
       { format: 'es', file: 'dist/index.mjs' },
     ],
-    external: ['@mihoyo-kit/api', '@genshin-data', 'undici'],
+    external: ['@mihoyo-kit/api', '@mihoyo-kit/genshin-data', 'undici'],
     plugins: [
       resolve({
+        modulesOnly: true,
         exportConditions: ['node', 'require', 'default'],
       }),
       typescript({
@@ -39,6 +40,7 @@ export default defineConfig([
     plugins: [
       resolve({
         browser: true,
+        modulesOnly: true,
         exportConditions: ['browser', 'default'],
       }),
       typescript({
